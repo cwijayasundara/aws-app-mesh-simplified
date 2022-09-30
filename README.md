@@ -5,11 +5,11 @@ Set the environment variables
 
 ```
 export AWS_PROFILE=default
-export AWS_DEFAULT_REGION=ap-southeast-2
+export AWS_DEFAULT_REGION=us-west-1
 export ENVIRONMENT_NAME=DEMO
 export SERVICES_DOMAIN=demo.local
 export MESH_NAME=appmesh-mesh
-export KEY_PAIR_NAME=uncle-russ
+export KEY_PAIR_NAME=dummy
 export AWS_ACCOUNT_ID=$(aws sts get-caller-identity --output text --query Account)
 export ENVOY_IMAGE=840364872350.dkr.ecr.us-west-2.amazonaws.com/aws-appmesh-envoy:v1.21.1.1-prod
 export COLOR_GATEWAY_IMAGE=${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/frontend
